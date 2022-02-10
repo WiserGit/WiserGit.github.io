@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<style type="text/css">
+body{
+   background-image: url("./green.jpg");
+   background-repeat: no-repeat;
+}
+div.map{
+   background-image: url("./mapple.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100px;
+   font-family:DFKai-sb;
+   font-size:22px;
+   text-align:center;
+   line-height:100px;
+}
+div.place{
+   background-image: url("./gold.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100px;
+   font-family:DFKai-sb;
+   font-size:22px;
+   text-align:center;
+   line-height:100px;
+}
+div.thank{
+   background-image: url("./grass.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100px;
+   font-family:DFKai-sb;
+   font-size:22px;
+   text-align:center;
+   line-height:100px;
+}
+div.music{
+   background-image: url("./tiffany.jpg");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 100px;
+   font-family:DFKai-sb;
+   font-size:22px;
+   text-align:center;
+   line-height:100px;
+}
+</style>
+<body><br>
+  <div class="map">查看地圖</div><br><br>
+  <div class="place">婚宴場地</div><br><br>
+  <div class="thank">電子謝卡索取</div><br><br>
+  <div class="music">背景音樂</div><br><br>
+  <!--<button>查看地圖</button><br>
+  <button>切換背景音樂</button><br>
+  <button>婚宴資訊</button><br>-->
+  <script type="text/javascript">
+    function playBackGroundLoop()
+    {
+		var audio = document.getElementById("oo");
+		var audioPlay = audio.play();
+    }
+    $(document).ready(function() {
+        $("#map input").prop("disabled", true);
+        $(".map select").prop("disabled", true);
+        $("#map textarea").prop("disabled", true);
+    });
+    $(".map").click(function(){
+        alert("QQ");
+    });
+	$(".music").click(function(){
+		playBackGroundLoop();
+    });
+  </script>
+  <audio src="music.mp3" id="oo" autoplay></audio>
+</body>
+</html>
